@@ -1,0 +1,14 @@
+# Old WordPress URLs -> new pages
+/program /academics/ 301
+/program/ /academics/ 301
+/enrollment /admissions/ 301
+/enrollment/ /admissions/ 301
+/home-day-care-service-v1 / 301
+/home-day-care-service-v1/ / 301
+/blog / 302
+/blog/ / 302
+/sample-page / 301
+/sample-page/ / 301
+/wp-sitemap.xml /sitemap.xml 301
+/feed / 301
+/feed/ / 301

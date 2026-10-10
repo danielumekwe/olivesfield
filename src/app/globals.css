@@ -1,26 +1,143 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), ui-serif, Georgia, serif;
+
+  /* Palette drawn from the school crest: navy book, olive laurel, orange lettering. */
+  --color-navy-950: #0f1838;
+  --color-navy-900: #16224d;
+  --color-navy-800: #1e2d63;
+  --color-navy-700: #2b3d7d;
+  --color-navy-100: #e4e8f4;
+  --color-olive-800: #4a5422;
+  --color-olive-700: #5d692b;
+  --color-olive-600: #76843a;
+  --color-olive-100: #ecefd9;
+  --color-laurel-400: #cdbd62;
+  --color-laurel-200: #e9e0ae;
+  --color-ember-700: #b4500f;
+  --color-ember-600: #cf6316;
+  --color-ember-100: #fbe8d6;
+  --color-cream-50: #fdfbf6;
+  --color-cream-100: #f8f3e8;
+  --color-cream-200: #efe7d5;
+  --color-ink: #1d2233;
+  --color-muted: #555b6e;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream-50);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  color: var(--color-navy-900);
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-ember-600);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@utility container-page {
+  width: 100%;
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (width >= 48rem) {
+    padding-inline: 2rem;
+  }
+}
+
+@utility eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-olive-700);
+  &::before {
+    content: "";
+    width: 1.75rem;
+    height: 2px;
+    background: var(--color-laurel-400);
+  }
+}
+
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.975rem;
+  line-height: 1.2;
+  transition:
+    background-color 0.15s,
+    color 0.15s,
+    border-color 0.15s;
+}
+
+@utility btn-primary {
+  background: var(--color-navy-900);
+  color: #fff;
+  &:hover {
+    background: var(--color-navy-700);
+  }
+}
+
+@utility btn-accent {
+  background: var(--color-ember-700);
+  color: #fff;
+  &:hover {
+    background: #9a430b;
+  }
+}
+
+@utility btn-outline {
+  border: 2px solid var(--color-navy-900);
+  color: var(--color-navy-900);
+  &:hover {
+    background: var(--color-navy-900);
+    color: #fff;
+  }
+}
+
+@utility btn-light {
+  background: #fff;
+  color: var(--color-navy-900);
+  &:hover {
+    background: var(--color-laurel-200);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
 }
