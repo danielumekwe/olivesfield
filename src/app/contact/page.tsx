@@ -24,7 +24,7 @@ export default function ContactPage() {
 
       <section className="py-14 md:py-20">
         <div className="container-page grid gap-12 lg:grid-cols-[1fr_1.2fr]">
-          <div>
+          <div data-reveal="left">
             <h2 className="text-3xl font-semibold">School office</h2>
             <p className="mt-3 text-lg leading-relaxed text-muted">
               Whether you are making an enquiry, seeking admission for your child or simply want to learn more about The
@@ -34,7 +34,7 @@ export default function ContactPage() {
               <ContactDetails />
             </div>
           </div>
-          <div>
+          <div data-reveal="right">
             <h2 className="mb-5 text-3xl font-semibold">Send us a message</h2>
             <ContactForm />
           </div>
@@ -56,6 +56,7 @@ export default function ContactPage() {
             src={mapEmbedUrl}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            data-reveal="up"
             className="mt-8 h-[26rem] w-full rounded-3xl border-0 shadow-sm"
           />
         </div>

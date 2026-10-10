@@ -9,11 +9,13 @@ type Props = {
   sizes?: string;
   className?: string;
   priority?: boolean;
+  /** Slide-in direction when scrolled into view. */
+  reveal?: "left" | "right" | "up" | "zoom";
 };
 
 // Responsive WebP image built from the pre-generated files in /public/images
 // (see scripts/optimize-images.sh). Width/height are set to avoid layout shift.
-export default function Photo({ name, alt, sizes = "100vw", className, priority }: Props) {
+export default function Photo({ name, alt, sizes = "100vw", className, priority, reveal }: Props) {
   const { w, h, widths } = manifest[name];
   const largest = widths[widths.length - 1];
   return (
@@ -29,6 +31,7 @@ export default function Photo({ name, alt, sizes = "100vw", className, priority 
       fetchPriority={priority ? "high" : undefined}
       decoding="async"
       className={className}
+      data-reveal={reveal}
     />
   );
 }

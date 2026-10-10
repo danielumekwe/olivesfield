@@ -21,7 +21,7 @@ export default function GalleryGrid({ items }: { items: GalleryItem[] }) {
     <>
       <ul className="columns-2 gap-4 md:columns-3 [&>li]:mb-4">
         {items.map((item, i) => (
-          <li key={item.name} className="break-inside-avoid">
+          <li key={item.name} data-reveal="zoom" className="break-inside-avoid">
             <button
               type="button"
               onClick={() => open(i)}

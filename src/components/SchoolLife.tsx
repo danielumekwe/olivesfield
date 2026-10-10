@@ -8,7 +8,7 @@ export default function SchoolLife() {
   return (
     <section className="py-16 md:py-24">
       <div className="container-page grid items-center gap-12 lg:grid-cols-[1fr_1.15fr]">
-        <div>
+        <div data-reveal="left">
           <SectionHeading
             eyebrow="School life"
             title="Learning that goes beyond the classroom"
@@ -28,7 +28,7 @@ export default function SchoolLife() {
             Discover school life <ArrowIcon width={18} height={18} />
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4" data-reveal="right">
           <Photo
             name="cultural-day-dance"
             alt="Pupils in traditional dress performing a dance during a cultural day celebration"

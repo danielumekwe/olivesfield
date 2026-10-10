@@ -41,7 +41,7 @@ export default function AcademicsPage() {
 
       <section className="bg-cream-100 py-16 md:py-24">
         <div className="container-page grid items-center gap-12 lg:grid-cols-2">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4" data-reveal="left">
             <Photo
               name="pupils-sandal-making"
               alt="Pupils in green uniforms showing sandals they have made in a practical skills session"
@@ -55,7 +55,7 @@ export default function AcademicsPage() {
               className="mt-8 aspect-[4/5] w-full rounded-3xl object-cover"
             />
           </div>
-          <div>
+          <div data-reveal="right">
             <p className="eyebrow">Teaching and learning</p>
             <h2 className="mt-3 text-3xl font-semibold leading-tight md:text-4xl">Experienced teachers, engaged learners</h2>
             <div className="mt-5 space-y-4 text-lg leading-relaxed text-muted">

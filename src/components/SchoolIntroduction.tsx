@@ -6,7 +6,7 @@ export default function SchoolIntroduction() {
   return (
     <section className="py-16 md:py-24">
       <div className="container-page grid items-center gap-12 lg:grid-cols-2">
-        <div className="relative">
+        <div className="relative" data-reveal="left">
           <Photo
             name="school-building"
             alt="Students standing beside the school bus in front of The Olivesfield College building"
@@ -17,7 +17,7 @@ export default function SchoolIntroduction() {
             “Moulding lives to lofty heights”
           </p>
         </div>
-        <div>
+        <div data-reveal="right">
           <p className="eyebrow">About our school</p>
           <h2 className="mt-3 text-3xl font-semibold leading-tight md:text-4xl">An enriching educational experience</h2>
           <div className="mt-5 space-y-4 text-lg leading-relaxed text-muted">

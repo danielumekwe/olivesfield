@@ -27,7 +27,7 @@ export default function AboutPage() {
 
       <section className="py-16 md:py-24">
         <div className="container-page grid gap-12 lg:grid-cols-[1.2fr_1fr]">
-          <div>
+          <div data-reveal="left">
             <p className="eyebrow">Our story</p>
             <h2 className="mt-3 text-3xl font-semibold leading-tight md:text-4xl">About The Olivesfield School</h2>
             <div className="mt-6 space-y-5 text-lg leading-relaxed text-muted">
@@ -57,7 +57,7 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-          <div className="space-y-5 lg:pt-14">
+          <div className="space-y-5 lg:pt-14" data-reveal="right">
             <Photo
               name="school-building"
               alt="Students beside the school bus in front of The Olivesfield College building"
@@ -83,7 +83,7 @@ export default function AboutPage() {
             text="We believe that every child is uniquely gifted and deserves an environment where they can learn, grow and thrive with confidence."
           />
           <div className="mt-12 grid gap-6 md:grid-cols-2">
-            <article className="rounded-3xl bg-navy-900 p-8 text-white md:p-10">
+            <article data-reveal="left" className="rounded-3xl bg-navy-900 p-8 text-white md:p-10">
               <h3 className="text-2xl font-semibold !text-laurel-200">Our mission</h3>
               <p className="mt-4 text-lg leading-relaxed text-navy-100">
                 To provide a high-quality and well-rounded education that nurtures children academically, morally,
@@ -91,7 +91,7 @@ export default function AboutPage() {
                 confidence, discipline and values needed to become responsible leaders and lifelong learners.
               </p>
             </article>
-            <article className="rounded-3xl border border-cream-200 bg-white p-8 md:p-10">
+            <article data-reveal="right" className="rounded-3xl border border-cream-200 bg-white p-8 md:p-10">
               <h3 className="text-2xl font-semibold text-olive-800">Our vision</h3>
               <p className="mt-4 text-lg leading-relaxed text-muted">
                 To be a leading educational institution recognised for excellence in character building, academic
@@ -100,7 +100,7 @@ export default function AboutPage() {
               </p>
             </article>
           </div>
-          <div className="mx-auto mt-12 max-w-3xl text-center">
+          <div data-reveal="up" className="mx-auto mt-12 max-w-3xl text-center">
             <h3 className="text-2xl font-semibold">Nurturing with purpose</h3>
             <p className="mt-4 text-lg leading-relaxed text-muted">
               We are committed to creating a supportive and inspiring atmosphere where pupils are encouraged to discover

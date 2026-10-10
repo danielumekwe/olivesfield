@@ -12,7 +12,7 @@ export default function Facilities() {
             title="Spaces designed for teaching, learning and play"
             text="Our school is equipped with modern educational and recreational facilities designed to support effective teaching and learning."
           />
-          <ul className="flex flex-wrap gap-2.5 lg:justify-end">
+          <ul className="flex flex-wrap gap-2.5 lg:justify-end" data-reveal="right">
             {facilities.map((f) => (
               <li key={f} className="rounded-full border border-olive-600/40 bg-white px-4 py-2 text-sm font-semibold text-olive-800">
                 {f}
@@ -27,8 +27,13 @@ export default function Facilities() {
               ["sports-school-field", "Pupils running a race on the school field while classmates watch", "The school field in use"],
               ["creche-room", "A bright room with small beds, soft toys and play mats for the youngest children", "A room for our youngest children"],
             ] as const
-          ).map(([name, alt, caption]) => (
-            <figure key={name} className="overflow-hidden rounded-3xl bg-white shadow-sm">
+          ).map(([name, alt, caption], i) => (
+            <figure
+              key={name}
+              data-reveal="up"
+              style={{ "--reveal-delay": `${i * 130}ms` } as React.CSSProperties}
+              className="photo-zoom overflow-hidden rounded-3xl bg-white shadow-sm"
+            >
               <Photo name={name} alt={alt} sizes="(min-width: 768px) 33vw, 100vw" className="aspect-[4/3] w-full object-cover" />
               <figcaption className="px-5 py-4 font-display text-lg text-navy-900">{caption}</figcaption>
             </figure>

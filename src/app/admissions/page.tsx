@@ -44,7 +44,12 @@ export default function AdmissionsPage() {
           <SectionHeading center eyebrow="How to enquire" title="Three simple steps to get started" />
           <ol className="mt-12 grid gap-6 md:grid-cols-3">
             {steps.map((s, i) => (
-              <li key={s.title} className="rounded-3xl border border-cream-200 bg-white p-8">
+              <li
+                key={s.title}
+                data-reveal="up"
+                style={{ "--reveal-delay": `${i * 130}ms` } as React.CSSProperties}
+                className="rounded-3xl border border-cream-200 bg-white p-8"
+              >
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-navy-900 font-display text-xl text-white">
                   {i + 1}
                 </span>
@@ -58,7 +63,7 @@ export default function AdmissionsPage() {
 
       <section id="enquire" className="bg-cream-100 py-16 md:py-24">
         <div className="container-page grid gap-12 lg:grid-cols-[1fr_1.2fr]">
-          <div>
+          <div data-reveal="left">
             <SectionHeading
               eyebrow="Admission enquiry"
               title="Talk to our admissions team"
@@ -68,7 +73,9 @@ export default function AdmissionsPage() {
               <ContactDetails />
             </div>
           </div>
-          <ContactForm defaultTopic="Admission for my child" />
+          <div data-reveal="right">
+            <ContactForm defaultTopic="Admission for my child" />
+          </div>
         </div>
       </section>
     </>

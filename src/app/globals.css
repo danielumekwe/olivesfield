@@ -141,3 +141,55 @@ p {
     transition: none !important;
   }
 }
+
+/* Scroll-reveal animations (see components/RevealObserver.tsx). */
+@media (prefers-reduced-motion: no-preference) {
+  html[data-js] [data-reveal] {
+    opacity: 0;
+    transition:
+      opacity 0.8s ease-out,
+      transform 0.8s cubic-bezier(0.22, 0.8, 0.3, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+  }
+  html[data-js] [data-reveal="left"] {
+    transform: translateX(-4rem);
+  }
+  html[data-js] [data-reveal="right"] {
+    transform: translateX(4rem);
+  }
+  html[data-js] [data-reveal="up"] {
+    transform: translateY(2.5rem);
+  }
+  html[data-js] [data-reveal="zoom"] {
+    transform: scale(0.92);
+  }
+  html[data-js] [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Gentle zoom on photographs inside cards and grids when hovered. */
+  .photo-zoom {
+    overflow: hidden;
+  }
+  .photo-zoom img {
+    transition: transform 0.6s ease;
+  }
+  .photo-zoom:hover img {
+    transform: scale(1.05);
+  }
+
+  @keyframes float-soft {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  .float-soft {
+    animation: float-soft 7s ease-in-out infinite;
+  }
+}

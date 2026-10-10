@@ -3,6 +3,7 @@ import { Fraunces, Figtree } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RevealObserver from "@/components/RevealObserver";
 import { site } from "@/lib/site";
 
 const display = Fraunces({ variable: "--font-display", subsets: ["latin"], display: "swap" });
@@ -57,7 +58,11 @@ const schoolJsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en-NG" className={`${display.variable} ${body.variable} antialiased`}>
+    <html lang="en-NG" className={`${display.variable} ${body.variable} antialiased`} suppressHydrationWarning>
+      <head>
+        {/* Marks that scripts run, so scroll animations may hide content before revealing it. */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.dataset.js=1" }} />
+      </head>
       <body className="flex min-h-screen flex-col">
         <a
           href="#main"
@@ -70,6 +75,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <Footer />
+        <RevealObserver />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolJsonLd) }} />
       </body>
     </html>

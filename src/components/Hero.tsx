@@ -153,7 +153,7 @@ export default function Hero() {
                 </div>
 
                 <div className="relative mx-auto w-full max-w-xl lg:max-w-none">
-                  <div aria-hidden className="absolute -right-6 -top-6 h-40 w-40 rounded-full bg-laurel-200 lg:-right-10" />
+                  <div aria-hidden className="float-soft absolute -right-6 -top-6 h-40 w-40 rounded-full bg-laurel-200 lg:-right-10" />
                   <Photo
                     name={s.photo}
                     alt={s.alt}

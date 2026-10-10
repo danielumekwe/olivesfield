@@ -9,9 +9,10 @@ export default function FounderMessage() {
           name="founder-christianah-edem"
           alt={`${site.founder}, ${site.founderRole}, seated at her desk`}
           sizes="(min-width: 1024px) 440px, 100vw"
+          reveal="left"
           className="aspect-[4/4.4] w-full rounded-t-[10rem] rounded-b-3xl object-cover shadow-lg"
         />
-        <figure>
+        <figure data-reveal="right">
           <p className="eyebrow">From our founder</p>
           <blockquote className="mt-5 space-y-4 font-display text-xl leading-relaxed text-navy-900 md:text-2xl md:leading-relaxed">
             <p>

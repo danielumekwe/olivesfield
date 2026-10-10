@@ -61,14 +61,16 @@ export default function SchoolLifePage() {
             title="Experiences that build confident, well-rounded learners"
           />
           <div className="mt-12 grid gap-x-8 gap-y-12 md:grid-cols-2">
-            {blocks.map((b) => (
-              <article key={b.title}>
+            {blocks.map((b, i) => (
+              <article key={b.title} data-reveal={i % 2 ? "right" : "left"}>
+                <div className="photo-zoom rounded-3xl">
                 <Photo
                   name={b.photo}
                   alt={b.alt}
                   sizes="(min-width: 768px) 50vw, 100vw"
                   className="aspect-[3/2] w-full rounded-3xl object-cover object-[center_25%]"
                 />
+                </div>
                 <h3 className="mt-5 text-2xl font-semibold">{b.title}</h3>
                 <p className="mt-2 text-lg leading-relaxed text-muted">{b.text}</p>
               </article>

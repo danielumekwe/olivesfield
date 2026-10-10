@@ -22,7 +22,7 @@ export default function HomePage() {
               title="The best start for your child"
               text="We nurture young minds academically, morally, socially and creatively through quality education and personalised attention."
             />
-            <Link href="/academics/" className="btn btn-outline shrink-0 self-start lg:self-auto">
+            <Link href="/academics/" data-reveal="right" className="btn btn-outline shrink-0 self-start lg:self-auto">
               How we teach <ArrowIcon width={18} height={18} />
             </Link>
           </div>

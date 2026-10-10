@@ -6,7 +6,7 @@ export default function AdmissionsCta() {
   return (
     <section className="bg-navy-900 text-white">
       <div className="container-page grid gap-8 py-14 md:py-20 lg:grid-cols-[1.3fr_1fr] lg:items-center">
-        <div>
+        <div data-reveal="left">
           <p className="eyebrow !text-laurel-200">Admissions</p>
           <h2 className="mt-3 text-3xl font-semibold leading-tight !text-white md:text-4xl">
             Become a part of our vibrant learning community
@@ -16,7 +16,7 @@ export default function AdmissionsCta() {
             Our team is always ready to answer your questions and welcome you for a visit.
           </p>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3" data-reveal="right">
           <Link href="/admissions/" className="btn btn-light">
             Start an admission enquiry
           </Link>

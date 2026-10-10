@@ -5,10 +5,15 @@ import { approachIcons } from "./Icons";
 export default function LearningApproach() {
   return (
     <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-      {learningApproach.map((item) => {
+      {learningApproach.map((item, i) => {
         const Icon = approachIcons[item.icon];
         return (
-          <li key={item.title} className="rounded-3xl border border-cream-200 bg-white p-7">
+          <li
+            key={item.title}
+            data-reveal="up"
+            style={{ "--reveal-delay": `${i * 110}ms` } as React.CSSProperties}
+            className="rounded-3xl border border-cream-200 bg-white p-7 transition-shadow hover:shadow-lg"
+          >
             <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-olive-100 text-olive-800">
               <Icon width={28} height={28} />
             </span>
