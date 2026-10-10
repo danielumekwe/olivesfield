@@ -3,6 +3,9 @@
   "name": "olivesfield-school",
   "main": "worker/index.ts",
   "compatibility_date": "2026-09-01",
+  // Builds the static site into ./out before every deploy, so Cloudflare's
+  // default deploy command (npx wrangler deploy) works without extra settings.
+  "build": { "command": "npm run build" },
   "assets": {
     "directory": "./out",
     "binding": "ASSETS",

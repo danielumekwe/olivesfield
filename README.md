@@ -9,7 +9,7 @@ static site and served by a Cloudflare Worker. No WordPress, PHP or database.
 ```bash
 npm install
 npm run dev        # http://localhost:3000 (pages only; the form API is not available here)
-npm run preview    # production build + Cloudflare Worker locally (http://localhost:8787), form API included
+npm run preview    # builds, then runs the Cloudflare Worker locally (http://localhost:8787), form API included
 npm run lint
 ```
 
@@ -29,8 +29,12 @@ npm run lint
 ```bash
 npx wrangler login
 npx wrangler secret put RESEND_API_KEY   # API key from resend.com, used to email enquiries
-npm run deploy                            # next build + wrangler deploy
+npm run deploy                            # builds the site, then wrangler deploy
 ```
+
+If you connect this repository in the Cloudflare dashboard (Workers Builds),
+leave the build command empty and keep the deploy command as
+`npx wrangler deploy` — `wrangler.jsonc` runs the Next.js build itself.
 
 The first deploy publishes to a `*.workers.dev` address for review. To go
 live, uncomment the `routes` block in `wrangler.jsonc` (the domain must be on
