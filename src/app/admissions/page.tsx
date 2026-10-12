@@ -35,8 +35,8 @@ export default function AdmissionsPage() {
         eyebrow="Admissions"
         title="Join the Olivesfield family"
         intro="Whether you are seeking admission for your child or simply want to learn more about the school, our team is always ready to assist you."
-        photo="pupils-craft-aprons"
-        photoAlt="A group of smiling pupils in aprons holding up crafts they have made"
+        photo="independence-day-flags"
+        photoAlt="Three smiling pupils in traditional dress holding Nigerian flags"
       />
 
       <section className="py-16 md:py-24">

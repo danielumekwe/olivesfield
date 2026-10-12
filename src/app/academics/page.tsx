@@ -43,14 +43,14 @@ export default function AcademicsPage() {
         <div className="container-page grid items-center gap-12 lg:grid-cols-2">
           <div className="grid grid-cols-2 gap-4" data-reveal="left">
             <Photo
-              name="pupils-sandal-making"
-              alt="Pupils in green uniforms showing sandals they have made in a practical skills session"
+              name="yellow-day-painting"
+              alt="Young pupils gathered around a table with plates of paint during a colour day activity"
               sizes="(min-width: 1024px) 280px, 50vw"
               className="aspect-[4/5] w-full rounded-3xl object-cover"
             />
             <Photo
-              name="students-market-stall"
-              alt="Students seated at a stall displaying drinks and snacks they prepared for sale"
+              name="blue-day-colouring"
+              alt="A smiling young pupil colouring in a worksheet at a table"
               sizes="(min-width: 1024px) 280px, 50vw"
               className="mt-8 aspect-[4/5] w-full rounded-3xl object-cover"
             />

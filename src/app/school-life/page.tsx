@@ -20,8 +20,8 @@ const blocks: { title: string; text: string; photo: PhotoName; alt: string }[] =
   {
     title: "Clubs and enrichment",
     text: "Chess classes, book clubs, music training and interactive learning programmes help pupils develop critical thinking, creativity and a love of learning.",
-    photo: "student-election",
-    alt: "Students in school uniform queueing to cast their votes in a ballot box on the school field",
+    photo: "yellow-day-handprints",
+    alt: "Young pupils holding out hands covered in yellow paint during a hand-printing activity",
   },
   {
     title: "Projects and enterprise",
@@ -38,8 +38,8 @@ const blocks: { title: string; text: string; photo: PhotoName; alt: string }[] =
   {
     title: "Culture and celebration",
     text: "School celebrations bring pupils, teachers and families together and give children the confidence to perform and take part.",
-    photo: "cultural-day-attire",
-    alt: "A pupil wearing traditional attire and coral beads for a cultural day celebration",
+    photo: "independence-traditional-group",
+    alt: "A group of pupils in traditional attire from across Nigeria at an Independence Day celebration",
   },
 ];
 
@@ -50,8 +50,8 @@ export default function SchoolLifePage() {
         eyebrow="School life"
         title="Education beyond the four walls of the classroom"
         intro="Our pupils are exposed to diverse experiences that encourage creativity, leadership, teamwork and independent thinking."
-        photo="cultural-day-dance"
-        photoAlt="Pupils in traditional dress performing a dance at a cultural day celebration"
+        photo="graduation-dance"
+        photoAlt="Pupils in pink ballet costumes performing a dance on stage at a graduation ceremony"
       />
 
       <section className="py-16 md:py-24">

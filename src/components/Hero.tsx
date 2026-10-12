@@ -27,8 +27,8 @@ const slides: Slide[] = [
     text: "At Olivesfield School, every child is empowered with the knowledge, confidence and character needed to become a responsible and successful citizen of tomorrow.",
     primary: { href: "/admissions/", label: "Enquire about admission" },
     secondary: { href: "/about/", label: "Explore our school" },
-    photo: "pupils-craft-aprons",
-    alt: "Smiling Olivesfield pupils in aprons holding up bead bracelets they have made",
+    photo: "independence-day-pupils",
+    alt: "Smiling Olivesfield pupils in traditional dress waving Nigerian flags at an Independence Day celebration",
   },
   {
     eyebrow: "Academics",
@@ -40,8 +40,8 @@ const slides: Slide[] = [
     text: "We nurture young minds academically, morally, socially and creatively through quality education and personalised attention.",
     primary: { href: "/academics/", label: "How we teach" },
     secondary: { href: "/about/", label: "Our mission and vision" },
-    photo: "pupils-enterprise-display",
-    alt: "Pupils in school uniform standing behind a table of products they made",
+    photo: "back-to-school-boys",
+    alt: "Three pupils in school uniform holding back-to-school signs on the first day of term",
   },
   {
     eyebrow: "School life",
@@ -53,8 +53,8 @@ const slides: Slide[] = [
     text: "Through excursions, project-based activities, chess classes, book clubs and interactive experiences, our pupils broaden their creativity, confidence and real-world understanding.",
     primary: { href: "/school-life/", label: "Discover school life" },
     secondary: { href: "/gallery/", label: "View the gallery" },
-    photo: "cultural-day-dance",
-    alt: "Pupils in traditional dress performing a dance during a cultural day celebration",
+    photo: "cultural-attire-students",
+    alt: "Students in traditional attire and coral beads in front of the school building",
   },
   {
     eyebrow: "Admissions",
@@ -66,8 +66,8 @@ const slides: Slide[] = [
     text: "Join a nurturing and inspiring environment where children are encouraged to learn, grow, explore and excel.",
     primary: { href: "/admissions/", label: "Start an admission enquiry" },
     secondary: { href: "/contact/", label: "Contact the school" },
-    photo: "school-building",
-    alt: "Students standing beside the school bus in front of The Olivesfield College building",
+    photo: "school-building-staff",
+    alt: "Staff lined up on the lawn in front of the green and orange Olivesfield school building",
   },
 ];
 

@@ -21,8 +21,8 @@ export default function AboutPage() {
         eyebrow="About the school"
         title="Nurturing children with purpose since 2006"
         intro="A safe, caring and stimulating environment in Magodo, where children of all backgrounds are given equal opportunities to learn, grow and excel."
-        photo="pupils-enterprise-display"
-        photoAlt="Olivesfield pupils in school uniform standing together behind a display table"
+        photo="staff-team"
+        photoAlt="Olivesfield teachers and staff smiling and posing together on the school lawn"
       />
 
       <section className="py-16 md:py-24">
@@ -59,14 +59,14 @@ export default function AboutPage() {
           </div>
           <div className="space-y-5 lg:pt-14" data-reveal="right">
             <Photo
-              name="school-building"
-              alt="Students beside the school bus in front of The Olivesfield College building"
+              name="school-building-staff"
+              alt="Staff lined up on the lawn in front of the green and orange Olivesfield school building"
               sizes="(min-width: 1024px) 460px, 100vw"
               className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg"
             />
             <Photo
-              name="college-students"
-              alt="Two students in navy blazers and yellow shirts smiling in the school grounds"
+              name="college-girls-blazers"
+              alt="College students in navy blazers and pink ties posing in a line beside the school building"
               sizes="(min-width: 1024px) 460px, 100vw"
               className="aspect-[4/3] w-full rounded-3xl object-cover object-top shadow-lg"
             />

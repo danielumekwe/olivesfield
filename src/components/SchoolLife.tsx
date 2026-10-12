@@ -30,8 +30,8 @@ export default function SchoolLife() {
         </div>
         <div className="grid grid-cols-2 gap-4" data-reveal="right">
           <Photo
-            name="cultural-day-dance"
-            alt="Pupils in traditional dress performing a dance during a cultural day celebration"
+            name="girl-child-day-assembly"
+            alt="Pupils in party hats gathered in front of a colourful mural for the International Day of the Girl Child"
             sizes="(min-width: 1024px) 600px, 100vw"
             className="col-span-2 aspect-[16/9] w-full rounded-3xl object-cover"
           />

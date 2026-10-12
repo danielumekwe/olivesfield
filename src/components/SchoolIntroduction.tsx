@@ -8,8 +8,8 @@ export default function SchoolIntroduction() {
       <div className="container-page grid items-center gap-12 lg:grid-cols-2">
         <div className="relative" data-reveal="left">
           <Photo
-            name="school-building"
-            alt="Students standing beside the school bus in front of The Olivesfield College building"
+            name="school-building-staff"
+            alt="Staff lined up on the lawn in front of the green and orange Olivesfield school building"
             sizes="(min-width: 1024px) 560px, 100vw"
             className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg"
           />
